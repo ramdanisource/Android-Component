@@ -5,7 +5,7 @@
 ## **ProgressBar Loading**
 
 1. Instance object ProgressBar
-    ``` java
+    ```java
     ProgressBar progressBar;
     ```
 2. Casting Object with id in XML, put in method onCreate() or another method
