@@ -50,15 +50,13 @@ Tambahkan widget <code>android.support.design.widget.CollapsingToolbarLayout</co
 
     </android.support.design.widget.AppBarLayout>
     ```
-    pada widget CollapsingLayout terdapat properties <code> app:layout_scrollFlags </code> untuk mengaktifkan efek scroll, terdapat beberapa
-    efek yang dapat dipakai yaitu <code> enterAlways </code>, <code> enterAlwaysCollapsed </code>,<code> exitUntilCollapsed </code>,<code> snap </code>,
-    detailnya dapat dilihat [disini](https://guides.codepath.com/android/Handling-Scrolls-with-CoordinatorLayout#responding-to-scroll-events). Pada
-    contoh ini mengunakan value <code>scroll|exitUntilCollapsed</code>.
 
-    Bisa juga ditambahkan widget <code>ImageView</code> untuk gambar, diletakan sebelum widget <code>Toolbar</code>, dan pada widget <code>ImageView</code>,
-    tambahkan properties <code>app:layout_collapseMode</code> dengan value <code>paralax</code>.
-    
-    Contoh penggunaan CollapsingLayout :
+
+pada widget CollapsingLayout terdapat properties <code> app:layout_scrollFlags </code> untuk mengaktifkan efek scroll, terdapat beberapa efek yang dapat dipakai yaitu <code> enterAlways </code>, <code> enterAlwaysCollapsed </code>,<code> exitUntilCollapsed </code>,<code> snap </code>, detailnya dapat dilihat [disini](https://guides.codepath.com/android/Handling-Scrolls-with-CoordinatorLayout#responding-to-scroll-events). Pada contoh ini mengunakan value <code>scroll|exitUntilCollapsed</code>.
+
+Bisa juga ditambahkan widget <code>ImageView</code> untuk gambar, diletakan sebelum widget <code>Toolbar</code>, dan pada widget <code>ImageView</code>, tambahkan properties <code>app:layout_collapseMode</code> dengan value <code>paralax</code>.
+
+Contoh penggunaan CollapsingLayout :
 
     <img width="300" src="https://github.com/ramdanisource/Android-Component/blob/master/screenshot/collapsing_layout.png" alt="Screenshot">
     <img width="300" src="https://github.com/ramdanisource/Android-Component/blob/master/screenshot/collapsing_layout2.png" alt="Screenshot">
