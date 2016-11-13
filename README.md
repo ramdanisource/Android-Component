@@ -10,10 +10,12 @@ Dokumentasi penggunaan komponen untuk pengembangan aplikasi android terutama pad
     versi yang digunakan pada saat membuat dokumentasi ini menggunakan versi 24.2.1, tambahkan depedency berikut pada <code>build.gradle</code>,
     yang berada pada <code>Modul:app</code>
 
+
     ``` shell
     compile "com.android.support:design:24.2.1";
     ```
     2. tambahkan widget <code>android.support.design.widget.CollapsingToolbarLayout</code>, letakan didalam widget AppBarLayout, seperti pada source code berikut :
+
 
     ``` xml
     <android.support.design.widget.AppBarLayout
@@ -58,6 +60,7 @@ Dokumentasi penggunaan komponen untuk pengembangan aplikasi android terutama pad
     tambahkan properties <code>app:layout_collapseMode</code> dengan value <code>paralax</code>.
     
     Contoh penggunaan CollapsingLayout :
+
     <img width="300" src="https://github.com/ramdanisource/Android-Component/blob/master/screenshot/collapsing_layout.png" alt="Screenshot">
  
 
