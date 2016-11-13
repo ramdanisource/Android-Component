@@ -6,15 +6,14 @@ Dokumentasi penggunaan komponen untuk pengembangan aplikasi android terutama pad
 1. Floating Action Button
 2. CollapsingLayout
 
-    1. Pada Layout XML yang akan diberi efek paralax seperti pada aplikasi whatsapp, tambahkan depedency design support library,
-    versi yang digunakan pada saat membuat dokumentasi ini menggunakan versi 24.2.1, tambahkan depedency berikut pada <code>build.gradle</code>,
-    yang berada pada <code>Modul:app</code>
+Pada Layout XML yang akan diberi efek paralax seperti pada aplikasi whatsapp, tambahkan depedency design support library, 
+versi yang digunakan pada saat membuat dokumentasi ini menggunakan versi 24.2.1, tambahkan depedency berikut pada <code>build.gradle</code>, yang berada pada <code>Modul:app</code>
 
 
     ``` shell
     compile "com.android.support:design:24.2.1";
     ```
-    2. tambahkan widget <code>android.support.design.widget.CollapsingToolbarLayout</code>, letakan didalam widget AppBarLayout, seperti pada source code berikut :
+Tambahkan widget <code>android.support.design.widget.CollapsingToolbarLayout</code>, letakan didalam widget AppBarLayout, seperti pada source code berikut :
 
 
     ``` xml
