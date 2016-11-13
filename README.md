@@ -6,50 +6,52 @@ Dokumentasi penggunaan komponen untuk pengembangan aplikasi android terutama pad
 1. Floating Action Button
 2. CollapsingLayout
 
+## Collapsing Layout
+
 Pada Layout XML yang akan diberi efek paralax seperti pada aplikasi whatsapp, tambahkan depedency design support library, 
-versi yang digunakan pada saat membuat dokumentasi ini menggunakan versi 24.2.1, tambahkan depedency berikut pada <code>build.gradle</code>, yang berada pada <code>Modul:app</code>
+versi yang digunakan pada saat membuat dokumentasi ini menggunakan versi 24.2.1, tambahkan depedency berikut pada <code>build.gradle</code>, yang berada pada <code>Modul:app</code>.
+
+``` shell
+compile "com.android.support:design:24.2.1";
+```
 
 
-    ``` shell
-    compile "com.android.support:design:24.2.1";
-    ```
 Tambahkan widget <code>android.support.design.widget.CollapsingToolbarLayout</code>, letakan didalam widget AppBarLayout, seperti pada source code berikut :
 
+``` xml
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+   >
 
-    ``` xml
-    <android.support.design.widget.AppBarLayout
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-       ">
+        app:contentScrim="?attr/colorPrimary"
+        app:expandedTitleMarginEnd="64dp"
+        app:expandedTitleMarginStart="48dp"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-        <android.support.design.widget.CollapsingToolbarLayout
-            android:id="@+id/collapsing_toolbar"
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
-            app:expandedTitleMarginEnd="64dp"
-            app:expandedTitleMarginStart="48dp"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            android:layout_height="200dp"
+            android:src="@drawable/cover_movies"
+            app:layout_collapseMode="parallax"
+            android:scaleType="center" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:src="@drawable/cover_movies"
-                app:layout_collapseMode="parallax"
-                android:scaleType="center" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+           ></android.support.v7.widget.Toolbar>
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-               ></android.support.v7.widget.Toolbar>
+    </android.support.design.widget.CollapsingToolbarLayout>
 
-        </android.support.design.widget.CollapsingToolbarLayout>
-
-    </android.support.design.widget.AppBarLayout>
-    ```
+</android.support.design.widget.AppBarLayout>
+```
 
 
 pada widget CollapsingLayout terdapat properties <code> app:layout_scrollFlags </code> untuk mengaktifkan efek scroll, terdapat beberapa efek yang dapat dipakai yaitu <code> enterAlways </code>, <code> enterAlwaysCollapsed </code>,<code> exitUntilCollapsed </code>,<code> snap </code>, detailnya dapat dilihat [disini](https://guides.codepath.com/android/Handling-Scrolls-with-CoordinatorLayout#responding-to-scroll-events). Pada contoh ini mengunakan value <code>scroll|exitUntilCollapsed</code>.
@@ -58,8 +60,8 @@ Bisa juga ditambahkan widget <code>ImageView</code> untuk gambar, diletakan sebe
 
 Contoh penggunaan CollapsingLayout :
 
-    <img width="300" src="https://github.com/ramdanisource/Android-Component/blob/master/screenshot/collapsing_layout.png" alt="Screenshot">
-    <img width="300" src="https://github.com/ramdanisource/Android-Component/blob/master/screenshot/collapsing_layout2.png" alt="Screenshot">
+<img width="300" src="https://github.com/ramdanisource/Android-Component/blob/master/screenshot/collapsing_layout.png" alt="Screenshot">
+<img width="300" src="https://github.com/ramdanisource/Android-Component/blob/master/screenshot/collapsing_layout2.png" alt="Screenshot">
     
 
     
