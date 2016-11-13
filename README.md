@@ -62,7 +62,8 @@ Dokumentasi penggunaan komponen untuk pengembangan aplikasi android terutama pad
     Contoh penggunaan CollapsingLayout :
 
     <img width="300" src="https://github.com/ramdanisource/Android-Component/blob/master/screenshot/collapsing_layout.png" alt="Screenshot">
- 
+    <img width="300" src="https://github.com/ramdanisource/Android-Component/blob/master/screenshot/collapsing_layout2.png" alt="Screenshot">
+    
 
     
 
